@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="system">
+	<name>PLG_SYSTEM_SCGENERATORTAG_NAME</name>
+	<version>1.0.0</version>
+	<creationDate>February 2016</creationDate>
+	<author>Simon Champion</author>
+	<authorEmail>simon@simonchampion.net</authorEmail>
+	<authorUrl></authorUrl>
+	<copyright>(C) 2016 Simon Champion</copyright>
+	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<description>PLG_SYSTEM_SCGENERATORTAG_DESCRIPTION</description>
+
+	<files>
+		<filename>index.html</filename>
+		<filename plugin="scgeneratortag">scgeneratortag.php</filename>
+	</files>
+
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_scgeneratortag.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="active" type="radio" description="PLG_SYSTEM_SCGENERATORTAG_ACTIVE_DESC" label="PLG_SYSTEM_SCGENERATORTAG_ACTIVE_LABEL" default="N">
+                    <option value="N">PLG_SYSTEM_SCGENERATORTAG_ACTIVE_NO</option>
+                    <option value="Y">PLG_SYSTEM_SCGENERATORTAG_ACTIVE_YES</option>
+                </field>
+				<field name="generator" type="text" description="PLG_SYSTEM_SCGENERATORTAG_GENERATOR_DESC" label="PLG_SYSTEM_SCGENERATORTAG_GENERATOR_LABEL" default="Joomla" size="20" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
